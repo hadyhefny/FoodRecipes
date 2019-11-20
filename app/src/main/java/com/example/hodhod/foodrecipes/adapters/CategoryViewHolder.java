@@ -4,9 +4,7 @@ import android.net.Uri;
 import android.view.View;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestManager;
-import com.bumptech.glide.request.RequestOptions;
 import com.example.hodhod.foodrecipes.R;
 import com.example.hodhod.foodrecipes.models.Recipe;
 
@@ -34,7 +32,7 @@ public class CategoryViewHolder extends RecyclerView.ViewHolder implements View.
         itemView.setOnClickListener(this);
     }
 
-    public void onBind(Recipe recipe){
+    public void onBind(Recipe recipe) {
 
         Uri path = Uri.parse("android.resource://com.example.hodhod.foodrecipes/drawable/" + recipe.getImage_url());
 
